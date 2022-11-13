@@ -10,8 +10,8 @@ void set_scale(uint8_t width_mul, uint8_t height_mul) {
 }
 
 void set_sprite(uint16_t index, uint32_t address, uint8_t mode, uint16_t x, uint16_t y, uint8_t h_flip, uint8_t v_flip, uint8_t z_depth, uint8_t collision_mask, uint8_t palette_offset, uint8_t width, uint8_t height) {
-	//data0 is a VRAM data port that can auto-increment its address everytime it's accessed
-	//By vpoking into 0 we can set that address
+	//data0 is a VRAM data port that can auto-increment its target address everytime it's accessed
+	//By vpoking into 0 we can set the target address
 	
 	vpoke(0, 0x11FC00 + index * 8);
 	VERA.data0 = (mode << 7) | (address >> 13);
