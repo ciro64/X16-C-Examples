@@ -58,7 +58,7 @@ void main(void) {
 		);
 	}
 	
-	load_sprite(0, arrow_data, 64, 64);
+	load_sprite(0, arrow_data, 32, 32);
 
 	update();
 }
