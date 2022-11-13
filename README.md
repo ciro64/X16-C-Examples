@@ -2,6 +2,8 @@
 
 The goal of this repository is to provide C examples for the Commander X16 for interacting with low level stuff in a intuitive way. The compiler used is [CC65](https://cc65.github.io/getting-started.html).
 
+Disclaimer: I'm a newcomer and this repository is under development.
+
 ## Compiling
 ### sprites.c
 ```
