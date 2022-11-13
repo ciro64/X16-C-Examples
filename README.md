@@ -7,7 +7,7 @@ Disclaimer: I'm a newcomer and this repository is under development.
 ## Compiling
 ### sprites.c
 ```
-./png2sprite.py -n arrow_data arrow.png arrow_data.inc
+python3 png2sprite.py -n arrow_data arrow.png arrow_data.inc
 cl65 -t cx16 -O -o sprites.prg sprites.c
 ```
 ## Running
